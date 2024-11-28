@@ -148,7 +148,7 @@ const Workexp = () => {
                              <Divider/>
                     - <strong>Essentials Automation Professional Certification</strong>
                           <h4 className="text-sm text-stone-300">
-                            Gained proficiency in automation tools and processes for modern enterprise environments.
+                            Gained proficiency in automation tools and processes for modern enterprise.
                           </h4>
 
                   </p>
