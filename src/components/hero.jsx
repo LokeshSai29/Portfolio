@@ -15,6 +15,7 @@ const hero = () => {
             </p>
             <p className="mb-8 p-2 text-xl">
                 {HERO.wel}
+                
             </p>
             <h2 className="my-1 p-1 text-4xl font-bold md:text-5xl lg:text-[7rem]">
                 {HERO.name}

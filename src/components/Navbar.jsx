@@ -8,6 +8,7 @@ const Navbar = () => {
     const [isMobileMenuOpen , setIsMobileMenuOpen] =
     useState (false);
 
+    
     const toggleMobileMenu = () =>{
         setIsMobileMenuOpen( !isMobileMenuOpen);
     }
