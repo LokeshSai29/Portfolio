@@ -33,9 +33,10 @@ export const NAVIGATION_LINKS = [
 
 export const HERO = {
   name: "LOKESH SAI",
+  wel : "Welcome to my portfolio, My name is ",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a passionate web developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences.",
+    "A passionate web developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences.",
 };
 
 export const PROJECTS = [
@@ -45,7 +46,7 @@ export const PROJECTS = [
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
     image: projectImage1,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/LokeshSai29/portfolio",
   },
   {
     id: 2,
@@ -53,7 +54,7 @@ export const PROJECTS = [
     description:
       "An e-commerce web application developed using Html and CSS for showcase my skills,designed to replicate the user interface and layout of the Amazon homepage.",
     image: projectImage2,
-    githubLink: "https://github.com/LokeshSai29/AmazonClone-Frontend",
+    githubLink: "https://github.com/LokeshSai29/amazonclone",
   },
   {
     id: 3,

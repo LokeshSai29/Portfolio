@@ -70,7 +70,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                           {/*image in mobile nav*/ }
                           <div>
-                            <a href="#">
+                          <a href="#hero" onClick={handleLogoClick}>
                               <img src={logo} width={90} className="m-2" />
                             </a>
                           </div>
