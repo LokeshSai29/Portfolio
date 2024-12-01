@@ -7,15 +7,15 @@ const Projects = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
+    const checkViewport = () => {
       setIsMobile(window.innerWidth <= 768); // Mobile breakpoint
     };
 
-    // Initial check and adding event listener
-    handleResize();
-    window.addEventListener("resize", handleResize);
+    // Initial check and event listener for resizing
+    checkViewport();
+    window.addEventListener("resize", checkViewport);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", checkViewport);
   }, []);
 
   return (
@@ -24,7 +24,6 @@ const Projects = () => {
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
         transition={{ duration: 0.8 }}
         className="mb-8 text-center text-3xl lg:text-4xl font-mono"
       >
@@ -32,16 +31,15 @@ const Projects = () => {
       </motion.h2>
 
       {/* Grid container */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             whileHover={!isMobile ? { scale: 1.05 } : {}}
-            className="group relative overflow-hidden rounded-3xl shadow-lg"
+            className="group relative overflow-hidden rounded-3xl"
           >
             {/* Project image */}
             <motion.img
@@ -50,33 +48,37 @@ const Projects = () => {
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125"
             />
 
-            {/* Overlay with project name */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
-              <h3 className="text-2xl font-bold">{project.name}</h3>
+            {/* Static project title */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+              <h3 className="mb-2 text-3xl">
+                {project.id}. {project.name}
+              </h3>
             </div>
 
-            {/* Hidden content on hover */}
+            {/* Hover overlay */}
             <motion.div
               initial={{ opacity: 0 }}
               whileHover={!isMobile ? { opacity: 1 } : {}}
               animate={isMobile ? { opacity: 1 } : {}}
               transition={{ duration: 0.5 }}
-              className={`absolute inset-0 flex flex-col items-center justify-center text-white px-6 py-4 backdrop-blur-md ${
+              className={`absolute inset-0 flex flex-col items-center justify-center text-white p-4 backdrop-blur-lg ${
                 isMobile ? "opacity-100" : "opacity-0"
               } transition-opacity duration-500 group-hover:opacity-100 cursor-pointer`}
             >
-              <h3 className="mb-4 text-xl font-semibold">{project.name}</h3>
-              <p className="mb-6 text-center">{project.description}</p>
+              <h3 className="mb-3 text-xl">{project.name}</h3>
+              <p className="mb-8 text-center">{project.description}</p>
 
-              {/* GitHub button */}
+              {/* GitHub Button */}
               <a
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center rounded-2xl bg-white px-4 py-2 text-black hover:bg-gray-300 transition-colors"
+                className="rounded-2xl bg-white px-4 py-2 text-black hover:bg-gray-300"
               >
-                <span className="mr-2">View on GitHub</span>
-                <MdArrowOutward />
+                <div className="flex items-center">
+                  <span>View on GitHub</span>
+                  <MdArrowOutward />
+                </div>
               </a>
             </motion.div>
           </motion.div>
