@@ -62,7 +62,7 @@ export const PROJECTS = [
     id: 3,
     name: "Flappy-mario(game)",
     description:
-      "Flappy Mario is a simple 2D arcade-style game based on the popular Flappy Bird game, but with a twist! Instead of the bird, you play as Mario as he navigates through pipes. The goal of the game is to avoid colliding with pipes while trying to achieve the highest score possible.",
+      "Flappy Mario is a simple 2D arcade-style game based on the popular Flappy Bird game .The goal of the game is to avoid colliding with pipes while trying to achieve the highest score possible.",
     image: projectImage3,
     githubLink: "https://github.com/LokeshSai29/FlappyMario",
   },
