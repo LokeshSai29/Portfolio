@@ -6,6 +6,7 @@ import Hero from "./components/hero"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
+import ScrollToTop from "./components/totop"
 import Workexp from "./components/Workexp"
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Education/>
         <ContactForm />
         <Footer/>
+        <ScrollToTop/>
         </div>   
     </div>
     
