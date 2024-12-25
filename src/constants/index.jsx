@@ -52,14 +52,22 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    name: "Amazon Clone(Frontend)",
+    name: "AI ChatBot",
     description:
-      "An e-commerce web application developed using Html and CSS for showcase my skills,designed to replicate the user interface and layout of the Amazon homepage.",
-    image: projectImage2,
-    githubLink: "https://github.com/LokeshSai29/amazonclone",
+      "A Google's Gemini-inspired conversational AI application built with React.js, styled using Tailwind CSS, and powered by GeminiAPI for intelligent responses and seamless user interaction.",
+      image: projectImage2,
+    githubLink: "https://github.com/LokeshSai29/AI-Chat-Bot",
   },
   {
     id: 3,
+    name: "Weather App",
+    description:
+      "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
+    image: projectImage4,
+    githubLink: "https://github.com/LokeshSai29/Weather-App",
+  },
+  {
+    id: 4,
     name: "Flappy-mario(game)",
     description:
       "Flappy Mario is a simple 2D arcade-style game based on the popular Flappy Bird game .The goal of the game is to avoid colliding with pipes while trying to achieve the highest score possible.",
@@ -67,13 +75,14 @@ export const PROJECTS = [
     githubLink: "https://github.com/LokeshSai29/FlappyMario",
   },
   {
-    id: 4,
-    name: "Weather App",
+    id: 5,
+    name: "Amazon Clone(FE)",
     description:
-      "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-    image: projectImage4,
-    githubLink: "https://github.com/user/weather-app",
+      "An e-commerce web application developed using Html and CSS for showcase my skills,designed to replicate the user interface and layout of the Amazon homepage.",
+    image: projectImage2,
+    githubLink: "https://github.com/LokeshSai29/amazonclone",
   },
+  
   /*
   {
     id: 5,

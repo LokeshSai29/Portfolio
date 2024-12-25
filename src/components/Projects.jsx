@@ -31,7 +31,7 @@ const Projects = () => {
       </motion.h2>
 
       {/* Grid container */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         {PROJECTS.map((project) => (
           <motion.div
             key={project.id}

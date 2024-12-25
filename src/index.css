@@ -19,3 +19,8 @@ body{
 .bg-img{
     background-image: url("../src/assets/bg-img5.png");
 }
+
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #c5bcdb transparent;
+}
