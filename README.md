@@ -1,8 +1,47 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built with **React**, **JavaScript**, and **Vite**. It showcases my skills, projects, work experience, education, and contact information. The website is fully responsive and optimized for both desktop and mobile views.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Navigation Bar** with the following sections:
+  - **Logo**
+  - **Projects**
+  - **About**
+  - **Skills**
+  - **Work Experience**
+  - **Education**
+  - **Contact**
+
+- **Projects Section** with:
+  - Links to GitHub repositories of my projects.
+  - A live demo link for each project (where applicable).
+
+- **Responsive Design** that adapts to both desktop and mobile views.
+
+- **Footer** with links to all my social media profiles.
+
+## Tech Stack
+
+- **Frontend:**
+  - React
+  - Vite
+  - Tailwind CSS
+  - Framer Motion
+
+- **Deployment:**
+  - Vercel
+
+## Live Demo
+
+You can check out the live demo of the portfolio here:  
+[abcdef.vercel.app](https://abcdef.vercel.app)
+
+## How to Run Locally
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/your-repository-name.git
+2. Navigate to the project directory:
+  ```bash
+  cd your-repository-name
