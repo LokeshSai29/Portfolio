@@ -4,34 +4,34 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
 
 ## Features
 
-- **Navigation Bar** with the following sections:
-    ```
-  Logo
-  Projects
-  About
-  Skills
-  Work Experience
-  Education
-  Contact
-  ```
+> **Navigation Bar** with the following sections:
+      
+  1.Logo
+  2.Projects
+  3.About
+  4.Skills
+  5.Work Experience
+  6.Education
+  7.Contact
 
-- **Projects Section** with:
+
+> **Projects Section** with:
   - Links to GitHub repositories of my projects.
   - A live demo link for each project (where applicable).
 
-- **Responsive Design** that adapts to both desktop and mobile views.
+> **Responsive Design** that adapts to both desktop and mobile views.
 
-- **Footer** with links to all my social media profiles.
+> **Footer** with links to all my social media profiles.
 
 ## Tech Stack
 
-- **Frontend:**
+> **Frontend:**
   - React
   - Vite
   - Tailwind CSS
   - Framer Motion
 
-- **Deployment:**
+> **Deployment:**
   - Vercel
 
 ## Live Demo
