@@ -14,8 +14,9 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
     `Contact`
       
 - **Projects Section** with:
-  - Links to GitHub repositories of my projects.
-  - A live demo link for each project (where applicable).
+  > Links to GitHub repositories of my projects.
+  
+  > A live demo link for each project (where applicable).
 
 - **Responsive Design** that adapts to both desktop and mobile views.
 
