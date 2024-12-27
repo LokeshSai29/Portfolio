@@ -5,6 +5,7 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
 ## Features
 
 - **Navigation Bar** with the following sections:
+  >
     `Home`
     `Projects`
     `About`
@@ -16,7 +17,6 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
 - **Projects Section** with:
   > Links to GitHub repositories of my projects.
   
-  > A live demo link for each project (where applicable).
 
 - **Responsive Design** that adapts to both desktop and mobile views.
 
