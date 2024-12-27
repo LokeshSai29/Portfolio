@@ -5,13 +5,13 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
 ## Features
 
 - **Navigation Bar** with the following sections:
-  `Home`
-  `Projects`
-  `About`
-  `Skills`
-  `Work Experience`
-  `Education`
-  `Contact`
+    `Home`
+    `Projects`
+    `About`
+    `Skills`
+    `Work Experience`
+    `Education`
+    `Contact`
       
 - **Projects Section** with:
   - Links to GitHub repositories of my projects.
@@ -31,12 +31,11 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
 
 - **Deployment:**
   `Vercel`
----
+
 ## Live Demo
 
 You can check out the live demo of the [portfolio_here](https://portfolio-lokeshsai.vercel.app/) 
 
----
 ## How to Run Locally
 
 1. Clone this repository:
