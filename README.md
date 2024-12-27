@@ -6,13 +6,13 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
 
 - **Navigation Bar** with the following sections:
     ```
-  - **Logo**
-  - **Projects**
-  - **About**
-  - **Skills**
-  - **Work Experience**
-  - **Education**
-  - **Contact**
+  Logo
+  Projects
+  About
+  Skills
+  Work Experience
+  Education
+  Contact
   ```
 
 - **Projects Section** with:
