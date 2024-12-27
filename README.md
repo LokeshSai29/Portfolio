@@ -5,6 +5,7 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
 ## Features
 
 - **Navigation Bar** with the following sections:
+    ```
   - **Logo**
   - **Projects**
   - **About**
@@ -12,6 +13,7 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
   - **Work Experience**
   - **Education**
   - **Contact**
+  ```
 
 - **Projects Section** with:
   - Links to GitHub repositories of my projects.
@@ -34,8 +36,7 @@ This is my personal portfolio website built with **React**, **JavaScript**, and 
 
 ## Live Demo
 
-You can check out the live demo of the portfolio here:  
-[abcdef.vercel.app](https://abcdef.vercel.app)
+You can check out the live demo of the [portfolio_here](https://portfolio-lokeshsai.vercel.app/) 
 
 ## How to Run Locally
 
@@ -43,5 +44,9 @@ You can check out the live demo of the portfolio here:
    ```bash
    git clone https://github.com/your-username/your-repository-name.git
 2. Navigate to the project directory:
-  ```bash
-  cd your-repository-name
+   ```bash
+   cd your-repository-name
+3. Install the dependencies:
+   ```bash
+   npm install
+
