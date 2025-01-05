@@ -79,7 +79,7 @@ export const PROJECTS = [
     name: "E-Commerce site",
     description:
       "A responsive e-commerce website built using React.js. The website includes various categories such as Men, Women, and Footwear, each with images for easy selection and checkout. ",
-    image: projectImage3,
+    image: projectImage2,
     githubLink: "https://github.com/LokeshSai29/E-commerce-site",
   },
   {
