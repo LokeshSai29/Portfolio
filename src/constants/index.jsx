@@ -13,7 +13,7 @@ import projectImage3 from "../assets/project3.jpeg";
 import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
-import { SiLeetcode } from "react-icons/si";
+import { SiLeetcode, SiTailwindcss } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
 
 
@@ -63,44 +63,42 @@ export const PROJECTS = [
     name: "Weather App",
     description:
       "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-    image: projectImage4,
+    image: projectImage5,
     githubLink: "https://github.com/LokeshSai29/Weather-App",
   },
   {
     id: 4,
-    name: "Flappy-mario(game)",
+    name: "Steganographer",
     description:
-      "Flappy Mario is a simple 2D arcade-style game based on the popular Flappy Bird game .The goal of the game is to avoid colliding with pipes while trying to achieve the highest score possible.",
+      "This project is an image steganography website that allows users to hide a message inside an image and later decode it by uploading the modified image.",
+    image: projectImage4,
+    githubLink: "https://github.com/LokeshSai29/Image-steganography",
+  },
+  {
+    id: 5,
+    name: "E-Commerce site",
+    description:
+      "A responsive e-commerce website built using React.js. The website includes various categories such as Men, Women, and Footwear, each with images for easy selection and checkout. ",
     image: projectImage3,
-    githubLink: "https://github.com/LokeshSai29/FlappyMario",
-  },
-  {
-    id: 5,
-    name: "Amazon Clone(FE)",
-    description:
-      "An e-commerce web application developed using Html and CSS for showcase my skills,designed to replicate the user interface and layout of the Amazon homepage.",
-    image: projectImage2,
-    githubLink: "https://github.com/LokeshSai29/amazonclone",
-  },
-  
-  /*
-  {
-    id: 5,
-    name: "Blog Platform",
-    description:
-      "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
-    image: projectImage5,
-    githubLink: "https://github.com/user/blog-platform",
+    githubLink: "https://github.com/LokeshSai29/E-commerce-site",
   },
   {
     id: 6,
-    name: "Chat Application",
+    name: "Flappy-mario(game)",
     description:
-      "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
+      "Flappy Mario is a simple 2D arcade-style game based on the popular Flappy Bird game .The goal of the game is to avoid colliding with pipes while trying to achieve the highest score possible.",
     image: projectImage6,
-    githubLink: "https://github.com/user/chat-application",
+    githubLink: "https://github.com/LokeshSai29/FlappyMario",
   },
-  */
+  {
+    id: 7,
+    name: "Amazon Clone(FE)",
+    description:
+      "An e-commerce web application developed using Html and CSS for showcase my skills,designed to replicate the user interface and layout of the Amazon homepage.",
+    image: projectImage1,
+    githubLink: "https://github.com/LokeshSai29/amazonclone",
+  },
+  
 ];
 
 export const BIO = [
@@ -130,8 +128,8 @@ export const SKILLS = [
     experience: "1.5+ years",
   },
   {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Node.js",
+    icon: <SiTailwindcss className="text-4xl text-blue-400 lg:text-5xl" />,
+    name: "Tailwind CSS",
     experience: "1+ years",
   },
   {
