@@ -1,8 +1,12 @@
 import { HERO } from "../constants";
 import cc from "../assets/carl1.png";
 import { motion } from "framer-motion";
+import resume from "../assets/resume.pdf";
+import { useState } from "react";
 
-const hero = () => {
+const Hero = () => {
+  const [isDownloaded, setIsDownloaded] = useState(false);
+
   // Animation Variants for HERO.name
   const container = {
     hidden: { opacity: 0 },
@@ -19,6 +23,11 @@ const hero = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
+  const handleDownload = () => {
+    setIsDownloaded(true);
+    setTimeout(() => setIsDownloaded(false), 2000); // Revert back to the download icon after 2 seconds
+  };
+
   return (
     <section className="flex min-h-screen flex-wrap items-center">
       {/* Left Section */}
@@ -32,7 +41,7 @@ const hero = () => {
           {HERO.greet}
         </p>
         <p className="mb-8 p-2 text-xl">{HERO.wel}</p>
-        
+
         {/* HERO.name animated text */}
         <motion.div
           className="my-1 p-1 text-4xl font-bold md:text-5xl lg:text-[7rem] tracking-tight flex"
@@ -46,8 +55,32 @@ const hero = () => {
             </motion.span>
           ))}
         </motion.div>
-        
+
         <p className="mb-8 p-2 text-xl">{HERO.description}</p>
+        {/* Resume Download Button */}
+        <div className="mb-5">
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            href={resume}
+            download="Lokesh_sai_resume.pdf"
+            onClick={handleDownload}
+            className="inline-flex items-center gap-3 px-4 py-2 
+          bg-transparent text-white font-medium rounded-2xl shadow-md border border-stone-50/30 
+        transition-all duration-300"
+            style={{
+              backdropFilter: "blur(10px)", // Adds blur effect
+              WebkitBackdropFilter: "blur(10px)", // Cross-browser compatibility
+              cursor: "pointer",
+            }}
+          >
+            <i
+              className={`fa-solid ${
+                isDownloaded ? "fa-solid fa-circle-check fa-lg text-green-600 rounded-full" : "fa-download"
+              }`}
+            ></i>
+            <span>{isDownloaded ? "Downloaded!" : "Download Resume"}</span>
+          </motion.a>
+        </div>
       </motion.div>
 
       {/* Right Section */}
@@ -74,4 +107,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
