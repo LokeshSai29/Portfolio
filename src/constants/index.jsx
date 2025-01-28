@@ -103,7 +103,7 @@ export const PROJECTS = [
 
 export const BIO = [
   "I am currently pursuing a degree in Computer Science at KL University, with an expected graduation in 2026. Over the course of my academic journey, I have been honing my skills and expertise in frontend development and related technologies, building a strong foundation to contribute effectively in the field of software engineering.",
-  "As a multi-disciplinary frontend developer, I bring a wealth of skills and expertise to my work. With a deep understanding of HTML, CSS, and JavaScript, along with proficiency in modern frameworks like React, I possess a versatile skill set that enables me to craft stunning and impactful web experiences for diverse audiences and clients."
+  "As a multi-disciplinary frontend developer, I bring a wealth of skills and expertise to my work. With a deep understanding of HTML, CSS, and JavaScript, along with proficiency in modern frameworks like React & TailwindCSS  , I possess a versatile skill set that enables me to craft stunning and impactful web experiences for diverse audiences and clients."
   ];
 
 export const SKILLS = [
