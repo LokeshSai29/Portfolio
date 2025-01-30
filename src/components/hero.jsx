@@ -29,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex min-h-screen flex-wrap items-center">
+    <section className="flex min-h-screen flex-wrap items-center pl-7 ">
       {/* Left Section */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}

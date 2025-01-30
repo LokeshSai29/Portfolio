@@ -47,22 +47,22 @@ export const PROJECTS = [
     name: "Personal Portfolio",
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
-    image: projectImage1,
+    image: projectImage2,
     githubLink: "https://github.com/LokeshSai29/portfolio",
   },
   {
     id: 2,
     name: "AI ChatBot",
     description:
-      "A Google's Gemini-inspired conversational AI application built with React.js, styled using Tailwind CSS, and powered by GeminiAPI for intelligent responses and seamless user interaction.",
-      image: projectImage2,
+      "A Google's Gemini-inspired AI application built with React.js, styled using Tailwind CSS, and powered by GeminiAPI for seamless user interaction.",
+      image: projectImage1,
     githubLink: "https://github.com/LokeshSai29/AI-Chat-Bot",
   },
   {
     id: 3,
     name: "Weather App",
     description:
-      "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
+      "A weather application that uses the OpenWeatherMap API to fetch current weather data for various locations, built with React and styled-components.",
     image: projectImage5,
     githubLink: "https://github.com/LokeshSai29/Weather-App",
   },
@@ -76,11 +76,11 @@ export const PROJECTS = [
   },
   {
     id: 5,
-    name: "E-Commerce site",
+    name: "Amazon Clone(FE)",
     description:
-      "A responsive e-commerce website built using React.js. The website includes various categories such as Men, Women, and Footwear, each with images for easy selection and checkout. ",
-    image: projectImage2,
-    githubLink: "https://github.com/LokeshSai29/E-commerce-site",
+      "An e-commerce web application for showcase my skills,designed to replicate the user interface and layout of the Amazon homepage.",
+    image: projectImage1,
+    githubLink: "https://github.com/LokeshSai29/amazonclone",
   },
   {
     id: 6,
@@ -92,11 +92,11 @@ export const PROJECTS = [
   },
   {
     id: 7,
-    name: "Amazon Clone(FE)",
+    name: "E-Commerce site",
     description:
-      "An e-commerce web application developed using Html and CSS for showcase my skills,designed to replicate the user interface and layout of the Amazon homepage.",
-    image: projectImage1,
-    githubLink: "https://github.com/LokeshSai29/amazonclone",
+      "A responsive e-commerce website built using React.js. The website includes various categories such as Men, Women, and Footwear, each with images for easy selection and checkout. ",
+    image: projectImage2,
+    githubLink: "https://github.com/LokeshSai29/E-commerce-site",
   },
   
 ];

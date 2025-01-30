@@ -11,10 +11,8 @@ const Projects = () => {
       setIsMobile(window.innerWidth <= 768); // Mobile breakpoint
     };
 
-    // Initial check and event listener for resizing
     checkViewport();
     window.addEventListener("resize", checkViewport);
-
     return () => window.removeEventListener("resize", checkViewport);
   }, []);
 
@@ -30,32 +28,47 @@ const Projects = () => {
         Projects
       </motion.h2>
 
-      {/* Grid container */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {PROJECTS.map((project) => (
+      {/* Grid Container */}
+      <div
+        className={`grid gap-4 ${
+          isMobile
+            ? "grid-cols-1 md:grid-cols-2" // Mobile: Simple Grid
+            : "grid-cols-3 lg:grid-cols-4 auto-rows-[180px] lg:auto-rows-[220px] pl-7 pr-7" // Desktop: Bento Grid
+        }`}
+      >
+        {PROJECTS.map((project, index) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
             whileHover={!isMobile ? { scale: 1.05 } : {}}
-            className="group relative overflow-hidden rounded-3xl"
+            className={`group relative overflow-hidden rounded-3xl ${
+              !isMobile &&
+              (index % 8 === 0
+                ? "lg:col-span-2 lg:row-span-2" // Big block
+                : index % 5 === 0
+                ? "lg:col-span-1 lg:row-span-2" // Tall block
+                : index % 3 === 0
+                ? "lg:col-span-2 lg:row-span-1" // Wide block
+                : "")
+            }`}
           >
-            {/* Project image */}
+            {/* Project Image */}
             <motion.img
               src={project.image}
               alt={project.name}
-              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125"
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
-            {/* Static project title */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-              <h3 className="mb-2 text-3xl">
+            {/* Project Title */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-2">
+              <h3 className="text-xl md:text-2xl font-bold">
                 {project.id}. {project.name}
               </h3>
             </div>
 
-            {/* Hover overlay */}
+            {/* Hover Overlay */}
             <motion.div
               initial={{ opacity: 0 }}
               whileHover={!isMobile ? { opacity: 1 } : {}}
