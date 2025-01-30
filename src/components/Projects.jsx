@@ -33,7 +33,7 @@ const Projects = () => {
         className={`grid gap-4 ${
           isMobile
             ? "grid-cols-1 md:grid-cols-2" // Mobile: Simple Grid
-            : "grid-cols-3 lg:grid-cols-4 auto-rows-[180px] lg:auto-rows-[220px] pl-7 pr-7" // Desktop: Bento Grid
+            : "grid-cols-3 lg:grid-cols-4 auto-rows-[180px] lg:auto-rows-[220px] pl-5 pr-5" // Desktop: Bento Grid
         }`}
       >
         {PROJECTS.map((project, index) => (
