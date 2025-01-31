@@ -47,8 +47,8 @@ const Projects = () => {
               !isMobile &&
               (index % 8 === 0
                 ? "lg:col-span-2 lg:row-span-2" // Big block
-                : index % 5 === 0
-                ? "lg:col-span-1 lg:row-span-2" // Tall block
+                : index % 5 === 0  
+                ?"lg:col-span-1 lg:row-span-2" // Increased height
                 : index % 3 === 0
                 ? "lg:col-span-2 lg:row-span-1" // Wide block
                 : "")
