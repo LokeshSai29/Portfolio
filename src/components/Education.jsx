@@ -13,7 +13,7 @@ const Education = () => {
       >
         My Education
       </motion.h2>
-      <div className="relative hidden md:flex flex-col items-center">
+      <div className="relative hidden md:flex flex-col items-center w-full overflow-x-hidden">
         <div className="absolute w-1 bg-gray-500 h-full left-1/2 transform -translate-x-1/2 "></div> {/* Spacing for line */}
         {EDUCATION.map((education, index) => (
           <motion.div
@@ -21,9 +21,9 @@ const Education = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, delay: index * 0.3 }}
             key={index}
-            className={`mb-8 w-full flex items-center ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}  
+            className={`mb-8 w-full flex items-center ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}
           >
-            <div className="relative w-5/12 p-3 border border-stone-50/30 rounded-lg shadow-lg mx-10 pr-7">
+            <div className="relative w-10/12 md:w-5/12 p-3 border border-stone-50/30 rounded-lg shadow-lg mx-4 md:mx-10 pr-7">
               <h3 className="text-lg font-semibold">{education.degree}</h3>
               <p className="text-md text-gray-300">{education.institution}</p>
               <p className="text-sm text-gray-400">{education.duration}</p>
@@ -35,7 +35,7 @@ const Education = () => {
       </div>
       <div className="md:hidden flex flex-col items-center">
         {EDUCATION.map((education, index) => (
-          <div key={index} className="mb-8 w-11/12 p-4 bg-gray-800 rounded-lg shadow-lg text-center">
+          <div key={index} className="mb-8 w-11/12 p-4  border border-stone-50/30 rounded-lg shadow-lg text-center">
             <h3 className="text-lg font-semibold">{education.degree}</h3>
             <p className="text-md text-gray-300">{education.institution}</p>
             <p className="text-sm text-gray-400">{education.duration}</p>
