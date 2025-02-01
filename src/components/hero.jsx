@@ -1,5 +1,5 @@
 import { HERO } from "../constants";
-import cc from "../assets/carl1.png";
+import cc from "../assets/bg2.png";
 import { motion } from "framer-motion";
 import resume from "../assets/resume.pdf";
 import { useState } from "react";
@@ -29,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex min-h-screen flex-wrap items-center pl-2 pr-2 md:pl-4 md:pr-1 ">
+    <section className="flex min-h-screen flex-wrap items-center pl-2 pr-2 md:pl-10 md:pr-2 ">
 
       {/* Left Section */}
       <motion.div
@@ -89,7 +89,7 @@ const Hero = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className="w-full md:w-1/2 lg:p-8"
+        className="w-full md:w-1/2 lg:p-4\8"
       >
         <div className="flex justify-center">
           <motion.img
@@ -97,7 +97,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
             src={cc}
-            width={400}
+            width={520}
             height={450}
             alt="Lokesh Sai"
             className="rounded-3xl border border-stone-500"
