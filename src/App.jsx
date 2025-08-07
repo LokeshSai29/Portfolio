@@ -8,6 +8,8 @@ import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import ScrollToTop from "./components/totop"
 import Workexp from "./components/Workexp"
+import Certificates from "./components/Certificates";
+
 
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
         <Bio />
         <Skills />
         <Workexp />
+        <Certificates/>
         <Education/>
         <ContactForm />
         <Footer/>
