@@ -17,13 +17,13 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="pt-20 px-4" id="projects">
+    <section className="pt-1 px-4" id="projects">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mb-8 text-center text-3xl lg:text-4xl font-mono"
+        className="mb-10 text-center text-3xl lg:text-4xl"
       >
         Projects
       </motion.h2>
